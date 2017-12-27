@@ -23,8 +23,11 @@ void loop() {
   // put your main code here, to run repeatedly:
   
   // check value of buttonPin
-  buttonState = digitalRead(buttonPin);
+  buttonState =  digitalRead(buttonPin);
 
+  // debugging statement
+  Serial.print(buttonState);
+  
   // logic to turn on and off the LED
   if (buttonState == HIGH){
     digitalWrite(LEDPin, HIGH);
