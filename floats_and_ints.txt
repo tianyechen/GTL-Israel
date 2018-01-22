@@ -1,0 +1,31 @@
+const float floatX = 1.0 ;
+const int intX = 1; 
+const float floatY = 2.0;
+const int intY = 2;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+}
+
+void loop() {
+  Serial.print("float/integer = ");
+  Serial.println(floatX/intY);
+  
+  Serial.print("integer/float = ");
+  Serial.println(intX/floatY); //TODO
+  
+  Serial.println("/////////////");
+  
+  Serial.print("float + integer");
+  Serial.println(); //TODO
+  
+  Serial.print("float - integer");
+  Serial.println(); //TODO
+  
+  Serial.print("float * integer");
+  Serial.println(); //TODO
+  
+  delay(5000);
+}
+
